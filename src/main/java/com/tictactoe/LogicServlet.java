@@ -16,7 +16,7 @@ public class LogicServlet extends HttpServlet {
         //Получаем объект игрового поля из сессии
         Field field = extractField(currentSession);
 
-        //получаем индек ячейки, по которой произошел отклик
+        //получаем индекс ячейки, по которой произошел отклик
         int index = getSelectedIndex(request);
         Sign currentSign = field.getField().get(index);
         //проверяем, что ячейка, по которой был клик пустая.
